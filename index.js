@@ -15,6 +15,10 @@ app.use(cors());
 // app.use('/posts',postRoutes);
 app.use('/memes',postRoutes);
 
+app.get('/',(req,res) => {
+    res.send('Hello!! welcome to xmeme');
+});
+
 const CONNECTION_URL = 'mongodb+srv://manvendra_projects:manvendra124@cluster0.cpb4x.mongodb.net/<dbname>?retryWrites=true&w=majority';
 const PORT = process.env.PORT || 8081;
 
