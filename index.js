@@ -19,7 +19,7 @@ app.get('/',(req,res) => {
     res.send('Hello!! welcome to xmeme');
 });
 
-const CONNECTION_URL = 'mongodb+srv://manvendra_projects:manvendra124@cluster0.cpb4x.mongodb.net/<dbname>?retryWrites=true&w=majority';
+const CONNECTION_URL = 'mongodb+srv://root:root1234@cluster0.0vvhppw.mongodb.net/?retryWrites=true&w=majority';
 const PORT = process.env.PORT || 8081;
 
 mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true})
